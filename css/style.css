@@ -953,6 +953,7 @@ main {
 .skill .title-wrapper {
   display: flex;
   align-items: center;
+  text-align: center;
   gap: 5px;
   margin-bottom: 8px;
 }
@@ -2170,3 +2171,29 @@ textarea.form-input::-webkit-resizer {
   }
 
 }
+
+.skill-progress-bg {
+  background: hsla(0, 0%, 100%, 0.11);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 20px;
+  width: 100%;
+}
+
+.skill-progress-fill {
+  animation: load 5s normal forwards;
+  box-shadow: 0 10px 40px -10px hsl(106, 81%, 40%);
+  border-radius: 100px;
+  background: #2e9207;
+  height: 20px;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+}
+
