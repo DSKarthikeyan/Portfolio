@@ -17,10 +17,10 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 
 // testimonials variables
-// const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-// const modalContainer = document.querySelector("[data-modal-container]");
-// const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-// const overlay = document.querySelector("[data-overlay]");
+const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+const modalContainer = document.querySelector("[data-modal-container]");
+const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
+const overlay = document.querySelector("[data-overlay]");
 
 // modal variable
 const modalImg = document.querySelector("[data-modal-img]");
@@ -34,22 +34,22 @@ const testimonialsModalFunc = function () {
 }
 
 // add click event to all modal items
-// for (let i = 0; i < testimonialsItem.length; i++) {
+for (let i = 0; i < testimonialsItem.length; i++) {
 
-//   testimonialsItem[i].addEventListener("click", function () {
+  testimonialsItem[i].addEventListener("click", function () {
 
-//     modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-//     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-//     modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-//     modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
 
-//     testimonialsModalFunc();
+    // testimonialsModalFunc();
 
-//   });
+  });
 
-// }
+}
 
-// add click event to modal close button
+// // add click event to modal close button
 // modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 // overlay.addEventListener("click", testimonialsModalFunc);
 
@@ -149,6 +149,9 @@ for (let i = 0; i < navigationLinks.length; i++) {
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
+        if (pages[i].classList == "welcome-anim") {
+          fallDown();
+        }
       } else {
         pages[i].classList.remove("active");
         navigationLinks[i].classList.remove("active");
@@ -157,3 +160,24 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+let options = {
+  startAngle: -1.55,
+  size: 150,
+  value: 0.85,
+  fill: { gradient: ['#a445b2', '#fa4299'] }
+}
+$(".circle .bar").circleProgress(options).on('circle-animation-progress',
+  function (event, progress, stepValue) {
+    $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+  });
+$(".js .bar").circleProgress({
+  value: 0.70
+});
+$(".node .bar").circleProgress({
+  value: 0.90
+});
+$(".react .bar").circleProgress({
+  value: 0.60
+});
+
