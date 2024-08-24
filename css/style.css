@@ -2179,16 +2179,16 @@ textarea.form-input::-webkit-resizer {
   align-items: center;
   position: relative;
   display: flex;
-  height: 20px;
+  height: 10px;
   width: 100%;
 }
 
 .skill-progress-fill {
   animation: load 5s normal forwards;
-  box-shadow: 0 10px 40px -10px hsl(106, 81%, 40%);
+  box-shadow: 0 10px 40px -2px hsl(106, 81%, 40%);
   border-radius: 100px;
   background: #2e9207;
-  height: 20px;
+  height: 10px;
 }
 
 @keyframes load {
@@ -2197,3 +2197,77 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
+li.one:before {
+  /* font-family: FontAwesome; */
+  left: 0;
+  color: var(--white-1);
+}
+
+.one {
+  display: list-item;
+  color: var(--light-gray);
+  margin: 12px;
+  list-style: disc;
+}
+
+ul.counter {
+  counter-reset: item;
+
+  li.one:before {
+    font-size: 10px;
+    padding-right: 7px;
+    /* Trail counter with period and a space */
+    /* content: counter(item) ". "; */
+    /* Increase one for every one new item */
+    /* counter-increment: item; */
+  }
+
+  li.one:hover:before {
+    color: var(--vegas-gold);
+    font-size: 10px;
+    padding-right: 7px;
+  }
+}
+
+
+.v-effect-link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.v-effect-link li {
+  display: inline-block;
+  min-width: 5em;
+  margin: 0 0.5em;
+}
+
+.v-effect-link a {
+  text-decoration: none;
+  display: block;
+  font-family: Arial;
+  position: relative;
+  color: black;
+  padding: .5em 0
+}
+
+.v-effect-link a:hover {
+  color: #c69f73;
+}
+
+.v-effect-link a:hover:before {
+  left: 0;
+  width: 100%;
+}
+
+.v-effect-link a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: .5px;
+  background-color: #c69f73;
+  bottom: calc(-1px);
+  right: 0;
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
