@@ -1,5 +1,15 @@
 'use strict';
 
+// Loader Animation
+const loader = document.getElementById('loader');
+const transition = document.querySelector('.transition')
+
+window.addEventListener("load", () => {
+transition.classList.add('slide');
+setTimeout(() => {
+  transition.classList.remove('slide');
+}, 1000);
+})
 
 
 // element toggle function
@@ -160,3 +170,4 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
