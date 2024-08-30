@@ -4,14 +4,6 @@
 const loader = document.getElementById('loader');
 const transition = document.querySelector('.transition')
 
-window.addEventListener("load", () => {
-transition.classList.add('slide');
-setTimeout(() => {
-  transition.classList.remove('slide');
-}, 1000);
-})
-
-
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
