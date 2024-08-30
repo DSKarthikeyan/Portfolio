@@ -69,7 +69,7 @@
   --fs-6: 14px;
   --fs-7: 13px;
   --fs-8: 11px;
-  --fs-9: 8px;
+  --fs-9: 9px;
 
   /* font-weight */
   --fw-300: 300;
@@ -373,7 +373,7 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 50%;
 }
 
 .info-content .name {
@@ -1523,11 +1523,12 @@ textarea.form-input::-webkit-resizer {
   }
 
   .avatar-box {
-    border-radius: 30px;
+    border-radius: 50%;
   }
 
   .avatar-box img {
     width: 120px;
+    border-radius: 50%;
   }
 
   .info-content .name {
@@ -2126,6 +2127,7 @@ textarea.form-input::-webkit-resizer {
 
   .avatar-box img {
     width: 150px;
+    border-radius: 50%;
   }
 
   .info-content .name {
