@@ -1,7 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" class="hydrated">
+<html lang="en" data-theme="dark" class="hydrated">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3CY2C9J07H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3CY2C9J07H');
+  </script>
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <style data-styles="">
     ion-icon {
@@ -46,6 +56,16 @@
   -->
 
   <main>
+    <!-- <button
+    type="button"
+    data-theme-toggle
+    aria-label=""
+  >Change to light theme</button> -->
+
+
+    <!-- <span class="fas fa-moon toggle_Mode_btn" data-theme-toggle
+    aria-label="" ></span> -->
+
 
     <!--
       - #SIDEBAR
@@ -56,7 +76,8 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./images/self.jpg" alt="Karthikeyan D S" width="80" style="border-radius: 50%;">
+          <img src="./images/self.jpg" alt="Karthikeyan D S" width="80" class="toggle_Mode_btn"
+            style="border-radius: 50%;" data-theme-toggle>
         </figure>
 
         <div class="info-content">
@@ -185,7 +206,6 @@
               <a href="https://drive.google.com/file/d/1A-5cPC3LjdFNtiTEgU8ZCVHHNDLnO8xo/view?usp=sharing">
                 <address>Download</address>
               </a>
-
             </div>
 
           </li>
@@ -195,6 +215,16 @@
         <div class="separator"></div>
 
         <ul class="social-list">
+
+          <!-- <li class="social-item">
+            <div class="switch-container">
+              <div id="switch" class="theme-switcher">
+                <input class="sun toggle_Mode_btn" data-theme-toggle type="checkbox" id="sun" />
+                <span class="moon"></span>
+              </div>
+            </div>
+          </li> -->
+
           <li class="social-item">
             <a href="https://leetcode.com/u/Karthikeyan_DS/" class="social-link">
               <ion-icon name="code" role="img" class="md hydrated" aria-label="logo code"><template
@@ -242,7 +272,6 @@
                 </template></ion-icon>
             </a>
           </li>
-
         </ul>
 
         <div class="copyright">
@@ -306,7 +335,6 @@
       -->
 
       <article class="about active" data-page="about">
-
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
@@ -550,18 +578,18 @@
               </div>
             </li>
 
-            <li class="clients-item">
+            <!-- <li class="clients-item">
               <div class="container">
                 <a class="resize_fit_center" href="https://www.jennair.com/">
                   <img src="./images/jenn-air.svg" alt="client logo">
                 </a>
               </div>
-            </li>
+            </li> -->
 
             <li class="clients-item">
               <div class="container">
                 <a class="resize_fit_center" href="https://www.carecentra.com/">
-                  <img src="./images/carecentra.svg" alt="client logo">
+                  <img src="./images/carecentra.png" alt="client logo">
                 </a>
               </div>
             </li>
@@ -569,7 +597,7 @@
             <li class="clients-item">
               <div class="container">
                 <a class="resize_fit_center" href="https://www.linkedin.com/company/cubeyogi/">
-                  <img src="./images/cubeyogi.jpg" alt="client logo">
+                  <img src="./images/cubeyogi.png" alt="client logo">
                 </a>
               </div>
             </li>
@@ -1575,7 +1603,9 @@
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </body>
 
 </html>
