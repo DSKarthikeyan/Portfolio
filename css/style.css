@@ -62,6 +62,7 @@
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
+  --color-background-container: var(--white-1);
 
   .sidebar,
   article {
@@ -80,7 +81,7 @@
     box-shadow: var(--shadow-2);
   }
 
-  .modal-close-btn{
+  .modal-close-btn {
     background: none;
   }
 
@@ -164,6 +165,8 @@
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
+
+  --color-background-container: var(--white-1);
 
 }
 
@@ -764,7 +767,9 @@ main {
   top: 0;
   left: 0;
   transform: translate(15px, -25px);
-  border-radius: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--color-background-container);
+  background-color: var(--color-background-container);
   box-shadow: var(--shadow-1);
 }
 
@@ -881,7 +886,9 @@ main {
 .modal-avatar-box {
   /* background: var(--bg-gradient-onyx); */
   width: max-content;
-  border-radius: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--color-background-container);
+  background-color: var(--color-background-container);
   margin-bottom: 15px;
   box-shadow: var(--shadow-2);
 }
@@ -1728,11 +1735,16 @@ textarea.form-input::-webkit-resizer {
 
   .testimonials-avatar-box {
     transform: translate(30px, -30px);
-    border-radius: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--color-background-container);
+    background-color: var(--color-background-container);
   }
 
   .testimonials-avatar-box img {
     width: 80px;
+    border-radius: 50%;
+    border: 1px solid var(--color-background-container);
+    background-color: var(--color-background-container);
   }
 
   .testimonials-item-title {
@@ -1767,12 +1779,17 @@ textarea.form-input::-webkit-resizer {
   }
 
   .modal-avatar-box {
-    border-radius: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--color-background-container);
+    background-color: var(--color-background-container);
     margin-bottom: 0;
   }
 
   .modal-avatar-box img {
     width: 65px;
+    border-radius: 50%;
+    border: 1px solid var(--color-background-container);
+    background-color: var(--color-background-container);
   }
 
   .modal-img-wrapper>img {
@@ -1931,6 +1948,9 @@ textarea.form-input::-webkit-resizer {
 
   .modal-avatar-box img {
     width: 80px;
+    border-radius: 50%;
+    border: 1px solid var(--color-background-container);
+    background-color: var(--color-background-container);
   }
 
 
@@ -2390,9 +2410,8 @@ input:checked~.moon {
 
 
 
-/* .toggle_Mode_btn {
-  color: var(--textColor);
-  padding: 10px 20px;
-  background: var(--bgColor);
-  border-radius: 5px;
-} */
+.toggle_Mode_btn {
+  border-radius: 50%;
+  border: 1px solid var(--color-background-container);
+  background-color: var(--color-background-container);
+}
