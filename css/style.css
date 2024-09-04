@@ -773,8 +773,22 @@ main {
   box-shadow: var(--shadow-1);
 }
 
+.testimonials-avatar-img {
+  border-radius: 50%;
+  border: 1px solid var(--color-background-container);
+  background-color: var(--color-background-container);
+}
+
 .testimonials-item-title {
   margin-bottom: 7px;
+}
+
+.friends {
+  display: flex;
+}
+
+.friends .social-item {
+  margin-left: 2%;
 }
 
 .testimonials-text {
@@ -891,6 +905,12 @@ main {
   background-color: var(--color-background-container);
   margin-bottom: 15px;
   box-shadow: var(--shadow-2);
+}
+
+.modal-avatar-img {
+  border-radius: 50%;
+  border: 1px solid var(--color-background-container);
+  background-color: var(--color-background-container);
 }
 
 .modal-img-wrapper>img {
@@ -1740,6 +1760,12 @@ textarea.form-input::-webkit-resizer {
     background-color: var(--color-background-container);
   }
 
+  .testimonials-avatar-img {
+    border-radius: 50%;
+    border: 1px solid var(--color-background-container);
+    background-color: var(--color-background-container);
+  }
+
   .testimonials-avatar-box img {
     width: 80px;
     border-radius: 50%;
@@ -1750,6 +1776,14 @@ textarea.form-input::-webkit-resizer {
   .testimonials-item-title {
     margin-bottom: 10px;
     margin-left: 95px;
+  }
+
+  .friends {
+    display: flex;
+  }
+
+  .friends .social-item {
+    margin-left: 2%;
   }
 
   .testimonials-text {
@@ -1785,7 +1819,7 @@ textarea.form-input::-webkit-resizer {
     margin-bottom: 0;
   }
 
-  .modal-avatar-box img {
+  .modal-avatar-img {
     width: 65px;
     border-radius: 50%;
     border: 1px solid var(--color-background-container);
@@ -1953,7 +1987,11 @@ textarea.form-input::-webkit-resizer {
     background-color: var(--color-background-container);
   }
 
-
+  .modal-avatar-img {
+    border-radius: 50%;
+    border: 1px solid var(--color-background-container);
+    background-color: var(--color-background-container);
+  }
 
   /**
    * PORTFOLIO
