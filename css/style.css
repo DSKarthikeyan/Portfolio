@@ -593,7 +593,6 @@ main {
   align-items: center;
   gap: 15px;
   padding-bottom: 4px;
-  padding-left: 7px;
 }
 
 .social-item .social-link {
@@ -2290,7 +2289,8 @@ textarea.form-input::-webkit-resizer {
   }
 
   .info-content .title {
-    margin: auto;
+    margin: auto;   
+    margin-bottom: 12px;
   }
 
   .info_more-btn {
