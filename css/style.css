@@ -5592,5 +5592,5 @@ video {
 .dark-light svg {
   fill: transparent;
   transition: 0.5s;
-  color: var(--smoky-black);
+  color: var(--color-background-container);
 }
