@@ -452,7 +452,7 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 150px;
   overflow: hidden;
   transition: var(--transition-2);
 }
@@ -491,7 +491,7 @@ main {
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;        
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .info_more-btn {
@@ -1677,7 +1677,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .separator {
-    margin: 32px 0;
+    margin: 24px 0;
   }
 
   .contacts-list {
@@ -2722,7 +2722,7 @@ video {
 }
 
 .dark-mode-toggle:hover .dark-mode-toggle__icon {
-  background: var(--vegas-green);
+  background: var(--white-1);
 }
 
 .dark-mode-toggle:hover .dark-mode-toggle__icon:before {
