@@ -244,28 +244,6 @@ const toggleDarkMode = () => {
   setDarkMode(theme === "light");
 };
 
-// const initDarkMode = () => {
-//   const query = window.matchMedia("(prefers-color-scheme: dark)");
-//   const themePreference = localStorage.getItem("theme");
-
-//   let active = query.matches;
-//   if (themePreference === "dark") {
-//     active = true;
-//   }
-//   if (themePreference === "light") {
-//     active = false;
-//   }
-
-//   setDarkMode(active);
-
-//   query.addListener(e => setDarkMode(e.matches));
-
-//   const toggleButton = document.querySelector(".js__dark-mode-toggle");
-//   toggleButton.addEventListener("click", toggleDarkMode);
-// };
-
-// initDarkMode();
-
 
 const toggleButton = document.querySelector('.dark-light');
 
