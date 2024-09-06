@@ -2458,7 +2458,7 @@ input:checked~.moon {
 
 .thumb-nail {
   border-radius: 50%;
-  border: 1px solid var(--color-background-container);
+  border: 2px solid var(--color-background-container);
   background-color: var(--color-background-container);
 }
 
@@ -2584,7 +2584,7 @@ input:checked~.moon {
 
 .bg-layer-1 {
   --tw-bg-opacity: 1;
-  background: var(--eerie-black-1);
+  background: var(--text-gradient-yellow);
 }
 
 .rounded-lg {
@@ -2711,7 +2711,7 @@ video {
   content: "";
   position: absolute;
   display: block;
-  background: var(--eerie-black-1);
+  background: var(--text-gradient-yellow);
   border-radius: 0.7rem;
   width: 0.6rem;
   height: 0.6rem;
