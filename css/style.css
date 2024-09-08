@@ -14,7 +14,7 @@
 :root {
   --grid-unit: 1rem;
   --border-radius-base: 0.5rem;
-  font-family: monospace;
+  font-family: var(--ff-poppins);
 }
 
 
@@ -83,7 +83,7 @@
     border: 1px solid var(--orange-yellow-crayola);
     box-shadow: var(--shadow-2);
     margin-bottom: 12px;
-    font-family: monospace;
+    font-family: var(--ff-poppins);
   }
 
   .modal-close-btn {
@@ -2813,7 +2813,7 @@ video {
 :root {
   --grid-unit: 1rem;
   --border-radius-base: 0.5rem;
-  font-family: monospace;
+  font-family: var(--ff-poppins);
 }
 
 
@@ -2882,7 +2882,7 @@ video {
     border: 1px solid var(--orange-yellow-crayola);
     box-shadow: var(--shadow-2);
     margin-bottom: 12px;
-    font-family: monospace;
+    font-family: var(--ff-poppins);
   }
 
   .modal-close-btn {
