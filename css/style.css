@@ -172,14 +172,13 @@
   --color-background-container: var(--white-1);
 
 	@media (min-width: 1200px) {
+    .nav @media only screen and (max-width: 1024px) {
     .navbar {
-        border-radius: 20px 20px 0 0;
-        background: rgba(133, 133, 133, 0.2);
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
     }
-}
+  }
 }
 
 .container {
