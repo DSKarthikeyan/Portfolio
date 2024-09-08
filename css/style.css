@@ -70,12 +70,14 @@
     border: 0px solid var(--jet);
   }
 
-  .navbar {
-    background: rgba(133, 133, 133, 0.2);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid var(--orange-yellow-crayola);
+  @media only screen and (max-width: 1024px) {
+    .navbar {
+      background: rgba(133, 133, 133, 0.2);
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--orange-yellow-crayola);
+    }
   }
 
   .info-content .title {
@@ -171,7 +173,7 @@
 
   --color-background-container: var(--white-1);
 
-	@media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1024px) {
     .navbar {
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       backdrop-filter: blur(20px);
@@ -491,10 +493,9 @@ main {
 
 .info-content .title {
   color: var(--white-1);
-  font-size: var(--fs-8);
-  font-weight: var(--fw-300);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-500);
   width: max-content;
-  padding: 3px 12px;
   border-radius: 8px;
   margin-bottom: 8px;
 }
@@ -1655,14 +1656,6 @@ textarea.form-input::-webkit-resizer {
     border-radius: 50%;
   }
 
-  .info-content .name {
-    margin-bottom: 15px;
-  }
-
-  .info-content .title {
-    padding: 5px 18px;
-  }
-
   .info_more-btn {
     top: -30px;
     right: -30px;
@@ -2787,7 +2780,7 @@ video {
 
 .dark-light {
   position: fixed;
-  bottom: 77px;
+  bottom: 60px;
   right: 30px;
   background: var(--text-gradient-yellow);
   box-shadow: 5px 9px 8px 4px rgba(0, 0, 0, 0.2);
