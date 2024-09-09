@@ -1050,7 +1050,7 @@ main {
   left: -30px;
   width: 1px;
   height: calc(100% + 50px);
-  background: var(--jet);
+  background: repeating-linear-gradient(to bottom, var(--jet), var(--jet) 6px, transparent 6px, transparent 12px);
 }
 
 .timeline-item::after {
